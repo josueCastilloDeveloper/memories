@@ -1,0 +1,95 @@
+.navbar {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 30px; /* Ensure border-radius is applied */
+  overflow: hidden; /* Hide overflow to maintain border-radius */
+}
+
+/* Adjust the width for small screens */
+@media (max-width: 640px) {
+  .navbar {
+    width: 200px; /* Width for small screens */
+  }
+  .diseniun-logo {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+.navbar-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px; /* Height of the animated border */
+  background-color: #70a86c; /* Color of the animated border */
+  transition: width 0.3s ease; /* Smooth transition for the width */
+}
+
+.navbar:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  opacity: 1;
+}
+
+.navbar nav ul {
+  list-style: none; /* Remove default list styling */
+  margin: 0;
+  padding: 10px 0; /* Padding top and bottom */
+  display: flex; /* Align items in a row */
+  justify-content: center; /* Center the list */
+  align-items: center;
+}
+
+.diseniun-logo {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  /* width: 500px; */
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50px; /* Ensure border-radius is applied */
+  overflow: hidden; /* Hide overflow to maintain border-radius */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for both properties */
+}
+
+.diseniun-logo:hover {
+  transform: scale(1.05); /* Slightly enlarge the image */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Create a shadow that simulates elevation */
+}
+
+.navbar nav ul li {
+  margin: 0 15px; /* Spacing between items */
+}
+
+.navbar nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Link color */
+}
+
+.content {
+  padding-top: 60px; /* Add top padding to account for the fixed navbar */
+}
+
+.image-hover-effect {
+  overflow: hidden; /* To maintain the rounded corners effect */
+  border-radius: 0.5rem; /* Match your Image's borderRadius if necessary */
+  display: inline-block; /* Or 'block' depending on your layout */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for both properties */
+}
+
+.image-hover-effect:hover {
+  transform: scale(1.05); /* Slightly enlarge the image */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Create a shadow that simulates elevation */
+}
