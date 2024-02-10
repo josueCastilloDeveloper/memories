@@ -34,13 +34,13 @@ const FloatingActionButtons = () => {
       setTimeout(() => {
         setOpenTikTok(false);
         console.log('holaIns');
-      }, 2000); // 3000 milliseconds = 3 seconds
+      }, 1000); // 3000 milliseconds = 3 seconds
       setTimeout(() => {
         setOpenFacebook(false);
-      }, 2080); // 3000 milliseconds = 3 seconds
+      }, 1080); // 3000 milliseconds = 3 seconds
       setTimeout(() => {
         setOpenInstagram(false);
-      }, 2160); // 3000 milliseconds = 3 seconds
+      }, 1160); // 3000 milliseconds = 3 seconds
     }
   }, [isHovering, isUnhovering]); // This effect depends on the isOpen state
 
