@@ -2,47 +2,91 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { LuInstagram } from 'react-icons/lu';
 import { FaFacebook } from 'react-icons/fa';
+import { SiTiktok } from 'react-icons/si';
+
+import './layout.css';
 
 const FloatingActionButtons = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
+  const [isUnhovering, setIsUnhovering] = useState(false);
+  const [openInstagram, setOpenInstagram] = useState(false);
+  const [openFacebook, setOpenFacebook] = useState(false);
+  const [openTikTok, setOpenTikTok] = useState(false);
 
   useEffect(() => {
     let timer: string | number | NodeJS.Timeout | undefined;
-    if (isOpen) {
+    if (isHovering) {
+      console.log('hola1');
       // Set a timer to close the buttons after 3 seconds
-      timer = setTimeout(() => {
-        setIsOpen(false);
-      }, 2000); // 3000 milliseconds = 3 seconds
+      setTimeout(() => {
+        setOpenInstagram(true);
+        console.log('holaIns');
+      }, 10); // 3000 milliseconds = 3 seconds
+      setTimeout(() => {
+        setOpenFacebook(true);
+      }, 40); // 3000 milliseconds = 3 seconds
+      setTimeout(() => {
+        setOpenTikTok(true);
+      }, 70); // 3000 milliseconds = 3 seconds
     }
-
-    // Clean up the timer when the component unmounts or isOpen changes
-    return () => clearTimeout(timer);
-  }, [isOpen]); // This effect depends on the isOpen state
+    if (isUnhovering) {
+      setTimeout(() => {
+        setOpenTikTok(false);
+        console.log('holaIns');
+      }, 2000); // 3000 milliseconds = 3 seconds
+      setTimeout(() => {
+        setOpenFacebook(false);
+      }, 2080); // 3000 milliseconds = 3 seconds
+      setTimeout(() => {
+        setOpenInstagram(false);
+      }, 2160); // 3000 milliseconds = 3 seconds
+    }
+  }, [isHovering, isUnhovering]); // This effect depends on the isOpen state
 
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
-    <div className="fixed left-5 top-5 flex flex-col items-center space-y-2">
-      <button className="rounded-full" onClick={toggleOpen}>
+    <div className=" ">
+      <button
+        onMouseEnter={() => {
+          setIsHovering(true);
+          setIsUnhovering(false);
+          console.log('hola');
+        }}
+        onMouseLeave={() => {
+          setIsHovering(false);
+          setIsUnhovering(true);
+          console.log('adios');
+        }}
+        className=""
+      >
         <Image
           src="/diseniun_logo.jpeg"
-          className="rounded-full"
+          className="diseniun-logo"
           width={80}
           height={80}
           alt="Diseniun Logo"
         />
       </button>
-      {isOpen && (
-        <>
-          <button className="rounded-full bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700">
-            <LuInstagram size={20} />
-          </button>
-          <button className="rounded-full bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700">
-            <FaFacebook size={20} />
-          </button>
-          {/* Additional buttons can be added here */}
-        </>
-      )}
+      <button
+        className="instagram-logo"
+        style={{ display: openInstagram ? 'block' : 'none' }}
+      >
+        <LuInstagram size={30} />
+      </button>
+      <button
+        className="facebook-logo"
+        style={{ display: openFacebook ? 'block' : 'none' }}
+      >
+        <FaFacebook size={30} />
+      </button>
+      <button
+        className="tiktok-logo"
+        style={{ display: openTikTok ? 'block' : 'none' }}
+      >
+        <SiTiktok size={30} />
+      </button>
     </div>
   );
 };
