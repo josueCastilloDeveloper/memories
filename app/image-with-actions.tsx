@@ -31,6 +31,7 @@ const FloatingActionButtons = () => {
       }, 70); // 3000 milliseconds = 3 seconds
     }
     if (isUnhovering) {
+      console.log('se fue');
       setTimeout(() => {
         setOpenTikTok(false);
         console.log('holaIns');
@@ -64,8 +65,8 @@ const FloatingActionButtons = () => {
         <Image
           src="/diseniun_logo.jpeg"
           className="diseniun-logo"
-          width={80}
-          height={80}
+          width={50}
+          height={50}
           alt="Diseniun Logo"
         />
       </button>
@@ -73,19 +74,19 @@ const FloatingActionButtons = () => {
         className="instagram-logo"
         style={{ display: openInstagram ? 'block' : 'none' }}
       >
-        <LuInstagram size={30} />
+        <LuInstagram size={40} />
       </button>
       <button
         className="facebook-logo"
         style={{ display: openFacebook ? 'block' : 'none' }}
       >
-        <FaFacebook size={30} />
+        <FaFacebook size={40} />
       </button>
       <button
         className="tiktok-logo"
         style={{ display: openTikTok ? 'block' : 'none' }}
       >
-        <SiTiktok size={30} />
+        <SiTiktok size={40} />
       </button>
     </div>
   );

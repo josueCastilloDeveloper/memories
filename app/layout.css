@@ -15,11 +15,7 @@
 /* Adjust the width for small screens */
 @media (max-width: 640px) {
   .navbar {
-    width: 200px; /* Width for small screens */
-  }
-  .diseniun-logo {
-    height: 10px;
-    width: 10px;
+    width: 250px; /* Width for small screens */
   }
 }
 
@@ -67,10 +63,18 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Create a shadow that simulates elevation */
 }
 
+/* Adjust the width for small screens */
+@media (min-width: 640px) {
+  .diseniun-logo {
+    height: 80px;
+    width: 80px;
+  }
+}
+
 .instagram-logo {
   position: fixed;
-  top: 110px;
-  left: 43px;
+  top: 78px;
+  left: 20px;
   /* width: 500px; */
   background-color: #ffffff;
 
@@ -85,8 +89,8 @@
 }
 .facebook-logo {
   position: fixed;
-  top: 90px;
-  left: 100px;
+  top: 130px;
+  left: 20px;
   /* width: 500px; */
   background-color: #ffffff;
 
@@ -102,8 +106,8 @@
 
 .tiktok-logo {
   position: fixed;
-  top: 37px;
-  left: 117px;
+  top: 182px;
+  left: 20px;
   /* width: 500px; */
   background-color: #ffffff;
 
@@ -115,6 +119,24 @@
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease; /* Smooth transition for both properties */
+}
+
+/* Adjust the width for small screens */
+@media (min-width: 640px) {
+  .instagram-logo {
+    top: 110px;
+    left: 43px;
+  }
+
+  .facebook-logo {
+    top: 90px;
+    left: 100px;
+  }
+
+  .tiktok-logo {
+    top: 37px;
+    left: 117px;
+  }
 }
 
 .navbar nav ul li {
