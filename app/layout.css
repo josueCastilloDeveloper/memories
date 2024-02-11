@@ -1,9 +1,9 @@
 .navbar {
   position: fixed;
-  top: 50px;
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
-  width: 500px;
+  width: 235px;
   background-color: #d9d9d9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -13,9 +13,9 @@
 }
 
 /* Adjust the width for small screens */
-@media (max-width: 640px) {
+@media (min-width: 640px) {
   .navbar {
-    width: 250px; /* Width for small screens */
+    width: 500px; /* Width for small screens */
   }
 }
 
