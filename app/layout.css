@@ -16,6 +16,7 @@
 @media (min-width: 640px) {
   .navbar {
     width: 500px; /* Width for small screens */
+    top: 50px;
   }
 }
 
@@ -149,7 +150,7 @@
 }
 
 .content {
-  padding-top: 60px; /* Add top padding to account for the fixed navbar */
+  padding-top: 40px; /* Add top padding to account for the fixed navbar */
 }
 
 .image-hover-effect {
@@ -162,6 +163,14 @@
 }
 
 .image-hover-effect:hover {
-  transform: scale(1.05); /* Slightly enlarge the image */
+  transform: scale(1.02); /* Slightly enlarge the image */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Create a shadow that simulates elevation */
+}
+
+/* Adjust the width for small screens */
+@media (min-width: 640px) {
+  .image-hover-effect:hover {
+    transform: scale(1.05); /* Slightly enlarge the image */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Create a shadow that simulates elevation */
+  }
 }

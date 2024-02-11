@@ -1,130 +1,39 @@
 'use client';
-import Image from 'next/image';
-import Link from 'next/link';
-import AOS from 'aos';
+// Import React and necessary hooks
 import React, { useEffect } from 'react';
+import AOS from 'aos';
+// Import the GalleryPage component
+import GalleryPage from './GalleryPage';
 
 export default function Page() {
-  // Initialize AOS
   useEffect(() => {
     AOS.init({
-      // AOS options
-      duration: 5000, // Animation duration in milliseconds
-      once: false, // Whether animation should only happen once
+      duration: 5000,
+      once: false,
     });
   }, []);
+
+  // Define the array of images to be passed to the GalleryPage component
+  const images = [
+    {
+      src: '/esculturas/lamparas/lampara1.png',
+      alt: 'Screenshot of the dashboard project showing mobile version',
+      width: 560,
+      height: 620,
+    },
+    {
+      src: '/esculturas/lamparas/lampara1.png',
+      alt: 'Screenshot of the dashboard project showing mobile version',
+      width: 560,
+      height: 620,
+    },
+    // Add more image objects as needed
+  ];
+
   return (
-    <div className="lm:p-[60px_90px] mt-4 grid grid-cols-1 justify-items-center gap-y-6 p-[40px_10px] sm:grid-cols-2 sm:p-[50px_40px]">
-      <div
-        className="image-hover-effect" // Example AOS animation
-      >
-        <Image
-          src="/giovanny-main-page.png"
-          className="rounded-lg"
-          width={560}
-          height={620}
-          alt="Screenshot of the dashboard project showing mobile version"
-        />
-      </div>
-      <div className="image-hover-effect">
-        <Image
-          src="/giovanny-main-page.png"
-          className="rounded-lg"
-          width={560}
-          height={620}
-          alt="Screenshot of the dashboard project showing mobile version"
-        />
-      </div>
-      <div className="image-hover-effect">
-        <Image
-          src="/giovanny-main-page.png"
-          className="rounded-lg"
-          width={560}
-          height={620}
-          alt="Screenshot of the dashboard project showing mobile version"
-        />
-      </div>
-      <div className="image-hover-effect">
-        <Image
-          src="/giovanny-main-page.png"
-          className="rounded-lg"
-          width={560}
-          height={620}
-          alt="Screenshot of the dashboard project showing mobile version"
-        />
-      </div>
-      <div className="image-hover-effect">
-        <Image
-          src="/giovanny-main-page.png"
-          className="rounded-lg"
-          width={560}
-          height={620}
-          alt="Screenshot of the dashboard project showing mobile version"
-        />
-      </div>
-      <div className="image-hover-effect">
-        <Image
-          src="/giovanny-main-page.png"
-          className="rounded-lg"
-          width={560}
-          height={620}
-          alt="Screenshot of the dashboard project showing mobile version"
-        />
-      </div>
-      <div className="image-hover-effect">
-        <Image
-          src="/giovanny-main-page.png"
-          className="rounded-lg"
-          width={560}
-          height={620}
-          alt="Screenshot of the dashboard project showing mobile version"
-        />
-      </div>
-      <div className="image-hover-effect">
-        <Image
-          src="/giovanny-main-page.png"
-          className="rounded-lg"
-          width={560}
-          height={620}
-          alt="Screenshot of the dashboard project showing mobile version"
-        />
-      </div>
-      <div className="image-hover-effect">
-        <Image
-          src="/giovanny-main-page.png"
-          className="rounded-lg"
-          width={560}
-          height={620}
-          alt="Screenshot of the dashboard project showing mobile version"
-        />
-      </div>
-      <div className="image-hover-effect">
-        <Image
-          src="/giovanny-main-page.png"
-          className="rounded-lg"
-          width={560}
-          height={620}
-          alt="Screenshot of the dashboard project showing mobile version"
-        />
-      </div>
-      <div className="image-hover-effect">
-        <Image
-          src="/giovanny-main-page.png"
-          className="rounded-lg"
-          width={560}
-          height={620}
-          alt="Screenshot of the dashboard project showing mobile version"
-        />
-      </div>
-      <div className="image-hover-effect">
-        <Image
-          src="/giovanny-main-page.png"
-          className="rounded-lg"
-          width={560}
-          height={620}
-          alt="Screenshot of the dashboard project showing mobile version"
-        />
-      </div>
+    <div>
+      {/* Render the GalleryPage component with the images array as a prop */}
+      <GalleryPage images={images} />
     </div>
   );
 }
