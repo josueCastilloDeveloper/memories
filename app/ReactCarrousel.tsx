@@ -38,6 +38,8 @@ const DemoCarousel: React.FC<CarouselProps> = () => {
         swipeable={true}
         emulateTouch={true}
         useKeyboardArrows={true}
+        dynamicHeight={true}
+        swipeScrollTolerance={10}
         // onSwipeStart={handleSwipeStart}
         // onSwipeEnd={handleSwipeEnd}
       >
@@ -45,7 +47,7 @@ const DemoCarousel: React.FC<CarouselProps> = () => {
           <img src="/esculturas/lamparas/lampara1.png" alt="Item 1" />
         </div>
         <div>
-          <img src="/esculturas/lamparas/lampara1.png" alt="Item 1" />{' '}
+          <img src="/esculturas/decoracion/decoracion1.png" alt="Item 1" />{' '}
         </div>
         <div>
           <img src="/esculturas/lamparas/lampara1.png" alt="Item 1" />{' '}
