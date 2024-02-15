@@ -13,7 +13,6 @@ const DemoCarousel: React.FC<CarouselProps> = () => {
   return (
     <div style={{ padding: '10px 20px', borderRadius: '20px' }}>
       <Carousel
-        borderRadius={20}
         infiniteLoop={true}
         showThumbs={false}
         showArrows={false}
@@ -30,17 +29,19 @@ const DemoCarousel: React.FC<CarouselProps> = () => {
           />
         </div>
         <div>
-        <img
+          <img
             style={{ borderRadius: '15px' }}
             src="/esculturas/lamparas/lampara1.png"
             alt="Item 1"
-          />        </div>
+          />{' '}
+        </div>
         <div>
-        <img
+          <img
             style={{ borderRadius: '15px' }}
             src="/esculturas/lamparas/lampara1.png"
             alt="Item 1"
-          />        </div>
+          />{' '}
+        </div>
       </Carousel>
     </div>
   );
