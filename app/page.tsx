@@ -36,6 +36,9 @@ export default function Page() {
       {/* Render the GalleryPage component with the images array as a prop */}
       {/* <GalleryPage images={images} /> */}
       <ReactCarrousel />
+      <ReactCarrousel />
+      <ReactCarrousel />
+      <ReactCarrousel />
     </div>
   );
 }
