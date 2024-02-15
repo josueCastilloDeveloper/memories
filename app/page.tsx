@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 // Import the GalleryPage component
 import GalleryPage from './GalleryPage';
+import ReactCarrousel from './ReactCarrousel';
 
 export default function Page() {
   useEffect(() => {
@@ -33,7 +34,8 @@ export default function Page() {
   return (
     <div>
       {/* Render the GalleryPage component with the images array as a prop */}
-      <GalleryPage images={images} />
+      {/* <GalleryPage images={images} /> */}
+      <ReactCarrousel />
     </div>
   );
 }

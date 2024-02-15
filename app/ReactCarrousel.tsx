@@ -1,0 +1,49 @@
+// Import necessary libraries
+import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel CSS
+
+// Define the type for the Carousel component props (if you have any)
+interface CarouselProps {
+  // Define any props here. For demonstration, we're using a static list,
+  // so no props are defined.
+}
+
+const DemoCarousel: React.FC<CarouselProps> = () => {
+  return (
+    <div style={{ padding: '10px 20px', borderRadius: '20px' }}>
+      <Carousel
+        borderRadius={20}
+        infiniteLoop={true}
+        showThumbs={false}
+        showArrows={false}
+        showStatus={false}
+        swipeable={true}
+        emulateTouch={true}
+        useKeyboardArrows={true}
+      >
+        <div>
+          <img
+            style={{ borderRadius: '15px' }}
+            src="/esculturas/lamparas/lampara1.png"
+            alt="Item 1"
+          />
+        </div>
+        <div>
+        <img
+            style={{ borderRadius: '15px' }}
+            src="/esculturas/lamparas/lampara1.png"
+            alt="Item 1"
+          />        </div>
+        <div>
+        <img
+            style={{ borderRadius: '15px' }}
+            src="/esculturas/lamparas/lampara1.png"
+            alt="Item 1"
+          />        </div>
+      </Carousel>
+    </div>
+  );
+};
+
+export default DemoCarousel;
