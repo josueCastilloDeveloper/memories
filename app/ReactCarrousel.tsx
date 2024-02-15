@@ -30,6 +30,7 @@ const DemoCarousel: React.FC<CarouselProps> = () => {
   return (
     <div style={{ padding: '10px 20px', borderRadius: '20px' }}>
       <Carousel
+        className="carrousel"
         infiniteLoop={true}
         showThumbs={false}
         showArrows={false}
@@ -37,8 +38,8 @@ const DemoCarousel: React.FC<CarouselProps> = () => {
         swipeable={true}
         emulateTouch={true}
         useKeyboardArrows={true}
-        onSwipeStart={handleSwipeStart}
-        onSwipeEnd={handleSwipeEnd}
+        // onSwipeStart={handleSwipeStart}
+        // onSwipeEnd={handleSwipeEnd}
       >
         <div>
           <img
