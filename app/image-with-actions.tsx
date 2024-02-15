@@ -1,65 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { LuInstagram } from 'react-icons/lu';
 import { FaFacebook } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si';
 
+import { FaInstagram, FaFacebookF, FaTiktok } from 'react-icons/fa';
+
+
 import './layout.css';
 
 const FloatingActionButtons = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isHovering, setIsHovering] = useState(false);
-  const [isUnhovering, setIsUnhovering] = useState(false);
   const [openInstagram, setOpenInstagram] = useState(false);
   const [openFacebook, setOpenFacebook] = useState(false);
   const [openTikTok, setOpenTikTok] = useState(false);
 
-  useEffect(() => {
-    let timer: string | number | NodeJS.Timeout | undefined;
-    if (isHovering) {
-      console.log('hola1');
-      // Set a timer to close the buttons after 3 seconds
-      setTimeout(() => {
-        setOpenInstagram(true);
-        console.log('holaIns');
-      }, 10); // 3000 milliseconds = 3 seconds
-      setTimeout(() => {
-        setOpenFacebook(true);
-      }, 40); // 3000 milliseconds = 3 seconds
-      setTimeout(() => {
-        setOpenTikTok(true);
-      }, 70); // 3000 milliseconds = 3 seconds
-    }
-    if (isUnhovering) {
-      console.log('se fue');
-      setTimeout(() => {
-        setOpenTikTok(false);
-        console.log('holaIns');
-      }, 1000); // 3000 milliseconds = 3 seconds
-      setTimeout(() => {
-        setOpenFacebook(false);
-      }, 1080); // 3000 milliseconds = 3 seconds
-      setTimeout(() => {
-        setOpenInstagram(false);
-      }, 1160); // 3000 milliseconds = 3 seconds
-    }
-  }, [isHovering, isUnhovering]); // This effect depends on the isOpen state
-
-  const toggleOpen = () => setIsOpen(!isOpen);
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
+    // Toggle the visibility of the action buttons
+    setOpenInstagram(!openInstagram);
+    setOpenFacebook(!openFacebook);
+    setOpenTikTok(!openTikTok);
+  };
 
   return (
-    <div className=" ">
+    <div>
       <button
-        onMouseEnter={() => {
-          setIsHovering(true);
-          setIsUnhovering(false);
-          console.log('hola');
-        }}
-        onMouseLeave={() => {
-          setIsHovering(false);
-          setIsUnhovering(true);
-          console.log('adios');
-        }}
+        onClick={toggleOpen}
         className=""
       >
         <Image
@@ -70,23 +37,25 @@ const FloatingActionButtons = () => {
           alt="Diseniun Logo"
         />
       </button>
+
+
       <button
         className="instagram-logo"
-        style={{ display: openInstagram ? 'block' : 'none' }}
+        style={{ display: isOpen ? 'block' : 'none' }}
       >
-        <LuInstagram size={40} />
+      <FaInstagram size={35} style={{ position: "absolute" , top: "3", left: "2", color: '#f6048e' }} />
       </button>
       <button
         className="facebook-logo"
-        style={{ display: openFacebook ? 'block' : 'none' }}
+        style={{ display: isOpen ? 'block' : 'none' }}
       >
-        <FaFacebook size={40} />
+      <FaFacebookF style={{ position: "absolute" , top: "4", left: "3", color: '#1877f2' }} size={33}/>
       </button>
       <button
         className="tiktok-logo"
-        style={{ display: openTikTok ? 'block' : 'none' }}
+        style={{ display: isOpen ? 'block' : 'none' }}
       >
-        <SiTiktok size={40} />
+      <FaTiktok style={{ position: "absolute" , top: "4", left: "4", color: '#000000' }} size={32} />
       </button>
     </div>
   );

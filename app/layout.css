@@ -76,6 +76,9 @@
   position: fixed;
   top: 78px;
   left: 20px;
+  height: 40px;
+  width: 40px;
+  display: flex;
   /* width: 500px; */
   background-color: #ffffff;
 
@@ -92,6 +95,8 @@
   position: fixed;
   top: 130px;
   left: 20px;
+  height: 40px;
+  width: 40px;
   /* width: 500px; */
   background-color: #ffffff;
 
@@ -109,6 +114,8 @@
   position: fixed;
   top: 182px;
   left: 20px;
+  height: 40px;
+  width: 40px;
   /* width: 500px; */
   background-color: #ffffff;
 
