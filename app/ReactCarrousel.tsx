@@ -9,7 +9,24 @@ interface CarouselProps {
   // so no props are defined.
 }
 
+// Define the functions inside the same component file for simplicity
+const disableScroll = () => {
+  document.body.style.overflow = 'hidden';
+};
+
+const enableScroll = () => {
+  document.body.style.overflow = '';
+};
+
 const DemoCarousel: React.FC<CarouselProps> = () => {
+  const handleSwipeStart = () => {
+    disableScroll();
+  };
+
+  // Event handler to enable scroll
+  const handleSwipeEnd = () => {
+    enableScroll();
+  };
   return (
     <div style={{ padding: '10px 20px', borderRadius: '20px' }}>
       <Carousel
@@ -20,6 +37,8 @@ const DemoCarousel: React.FC<CarouselProps> = () => {
         swipeable={true}
         emulateTouch={true}
         useKeyboardArrows={true}
+        onSwipeStart={handleSwipeStart}
+        onSwipeEnd={handleSwipeEnd}
       >
         <div>
           <img
