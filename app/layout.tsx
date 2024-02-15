@@ -47,8 +47,11 @@ export default function RootLayout({
   const handleMouseLeave = () => window.scrollY >= 100 && setOpacity(0.5);
 
   return (
-    <html lang="en">
-      <body className={`${inter.className} antialiased`}>
+    <html style={{ overscrollBehavior: 'none' }} lang="en">
+      <body
+        style={{ overscrollBehavior: 'none' }}
+        className={`${inter.className} antialiased`}
+      >
         <div style={{}}>
           <ImageWithActions />
           <div>
