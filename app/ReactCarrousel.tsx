@@ -36,7 +36,7 @@ const DemoCarousel: React.FC<CarouselProps> = ({ images }) => {
         showThumbs={false}
         showArrows={true}
         showStatus={false}
-        swipeable={true}
+        swipeable={false}
         emulateTouch={false}
         useKeyboardArrows={true}
         dynamicHeight={false}
