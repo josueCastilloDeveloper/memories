@@ -86,6 +86,11 @@ export default function Page() {
       { src: '/esculturas/lamparas/l4/i7.JPG', alt: 'Description 1' },
       // More images for the second carousel
     ],
+    [
+      { src: '/esculturas/exclusivos/e1/i1.JPG', alt: 'Description 1' },
+      { src: '/esculturas/exclusivos/e1/i2.JPG', alt: 'Description 1' },
+      // More images for the second carousel
+    ],
     // More image arrays for additional carousels
   ];
 

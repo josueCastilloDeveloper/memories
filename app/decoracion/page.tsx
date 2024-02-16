@@ -34,42 +34,12 @@ export default function Page() {
   ];
 
   const carouselImages = [
-    [
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 1' },
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 2' },
-      // More images for the first carousel
-    ],
-    [
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
-      // More images for the second carousel
-    ],
-    [
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
-      // More images for the second carousel
-    ],
-    [
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
-      // More images for the second carousel
-    ],
-    [
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
-      // More images for the second carousel
-    ],
-    [
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
-      // More images for the second carousel
-    ],
     // More image arrays for additional carousels
   ];
 
   return (
     <div className="esculturas-page">
-      <MultiCarousel carousels={carouselImages} />
+      {/* <MultiCarousel carousels={carouselImages} /> */}
     </div>
   );
 }

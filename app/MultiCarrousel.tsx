@@ -8,10 +8,10 @@ interface ImageObject {
 }
 
 interface MultiCarouselProps {
-  carousels: ImageObject[][];
+  carousels: ImageObject[][] ;
 }
 
-const MultiCarousel: React.FC<MultiCarouselProps> = ({ carousels }) => {
+const MultiCarousel: React.FC<MultiCarouselProps> = ({ carousels = []}) => {
   return (
     <div className="grid-container">
       {carousels.map((images, index) => (
