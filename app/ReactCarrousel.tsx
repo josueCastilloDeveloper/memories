@@ -48,6 +48,22 @@ const DemoCarousel: React.FC<CarouselProps> = ({ images }) => {
         {images.map((image, index) => (
           <div key={index}>
             <Image src={image.src} width={560} height={620} alt={image.alt} />
+            <p
+              style={{
+                position: 'absolute',
+                bottom: 0,
+                width: '100%',
+                color: 'white',
+                padding: '40px 0',
+                fontSize: '25px',
+                fontFamily: 'Playfair Display',
+                fontOpticalSizing: 'auto',
+                // fontWeight: <weight>;
+                fontWeight: 700,
+              }}
+            >
+              Escultura
+            </p>
           </div>
         ))}
       </Carousel>

@@ -232,27 +232,27 @@
 }
 
 .esculturas-page {
-  padding: 0 10px; /* Default padding for small screens */
+  padding: 20px 10px; /* Default padding for small screens */
 }
 
 /* Increase padding for medium screens (e.g., tablets) */
 @media (min-width: 768px) {
   .esculturas-page {
-    padding: 0 50px; /* Adjust as needed */
+    padding: 20px 50px; /* Adjust as needed */
   }
 }
 
 /* Increase padding for large screens */
 @media (min-width: 1024px) {
   .esculturas-page {
-    padding: 0 100px; /* Adjust as needed */
+    padding: 20px 100px; /* Adjust as needed */
   }
 }
 
 /* Maximum padding for extra large screens */
 @media (min-width: 1200px) {
   .esculturas-page {
-    padding: 0 200px; /* Maximum padding */
+    padding: 45px 200px; /* Maximum padding */
   }
 }
 
