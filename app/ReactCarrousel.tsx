@@ -32,7 +32,7 @@ const DemoCarousel: React.FC<CarouselProps> = ({ images }) => {
     <div style={{ borderRadius: '20px' }}>
       <Carousel
         className="carrousel"
-        infiniteLoop={false}
+        infiniteLoop={true}
         showThumbs={false}
         showArrows={false}
         showStatus={false}
