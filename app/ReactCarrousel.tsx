@@ -40,7 +40,7 @@ const DemoCarousel: React.FC<CarouselProps> = ({ images }) => {
         emulateTouch={true}
         useKeyboardArrows={true}
         dynamicHeight={true}
-        swipeScrollTolerance={10}
+        swipeScrollTolerance={20}
         // Uncomment these if you have defined the event handlers
         // onSwipeStart={handleSwipeStart}
         // onSwipeEnd={handleSwipeEnd}
