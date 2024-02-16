@@ -35,33 +35,55 @@ export default function Page() {
 
   const carouselImages = [
     [
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 1' },
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 2' },
+      { src: '/esculturas/lamparas/l1/i1.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l1/i2.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l1/i3.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l1/i4.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l1/i5.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l1/i6.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l1/i7.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l1/i8.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l1/i9.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l1/i10.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l1/i11.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l1/i12.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l1/i13.JPG', alt: 'Description 1' },
       // More images for the first carousel
     ],
     [
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
+      { src: '/esculturas/lamparas/l2/i1.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l2/i2.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l2/i3.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l2/i4.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l2/i5.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l2/i6.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l2/i7.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l2/i8.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l2/i9.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l2/i10.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l2/i11.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l2/i12.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l2/i13.JPG', alt: 'Description 1' },
       // More images for the second carousel
     ],
     [
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
+      { src: '/esculturas/lamparas/l3/i1.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l3/i2.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l3/i3.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l3/i4.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l3/i5.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l3/i6.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l3/i7.JPG', alt: 'Description 1' },
       // More images for the second carousel
     ],
     [
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
-      // More images for the second carousel
-    ],
-    [
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
-      // More images for the second carousel
-    ],
-    [
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
-      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
+      { src: '/esculturas/lamparas/l4/i1.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l4/i2.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l4/i3.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l4/i4.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l4/i5.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l4/i6.JPG', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/l4/i7.JPG', alt: 'Description 1' },
       // More images for the second carousel
     ],
     // More image arrays for additional carousels

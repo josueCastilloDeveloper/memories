@@ -4,6 +4,9 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 // Import the GalleryPage component
 import GalleryPage from '../GalleryPage';
+import ReactCarrousel from '../ReactCarrousel';
+import MultiCarousel from '../MultiCarrousel';
+import '../layout.css';
 
 export default function Page() {
   useEffect(() => {
@@ -16,7 +19,13 @@ export default function Page() {
   // Define the array of images to be passed to the GalleryPage component
   const images = [
     {
-      src: '/giovanny-main-page.png',
+      src: '/esculturas/lamparas/lampara1.png',
+      alt: 'Screenshot of the dashboard project showing mobile version',
+      width: 560,
+      height: 620,
+    },
+    {
+      src: '/esculturas/lamparas/lampara1.png',
       alt: 'Screenshot of the dashboard project showing mobile version',
       width: 560,
       height: 620,
@@ -24,10 +33,43 @@ export default function Page() {
     // Add more image objects as needed
   ];
 
+  const carouselImages = [
+    [
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 2' },
+      // More images for the first carousel
+    ],
+    [
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
+      // More images for the second carousel
+    ],
+    [
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
+      // More images for the second carousel
+    ],
+    [
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
+      // More images for the second carousel
+    ],
+    [
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
+      // More images for the second carousel
+    ],
+    [
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
+      // More images for the second carousel
+    ],
+    // More image arrays for additional carousels
+  ];
+
   return (
-    <div>
-      {/* Render the GalleryPage component with the images array as a prop */}
-      <GalleryPage images={images} />
+    <div className="esculturas-page">
+      <MultiCarousel carousels={carouselImages} />
     </div>
   );
 }

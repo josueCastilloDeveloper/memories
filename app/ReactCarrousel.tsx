@@ -62,7 +62,7 @@ const DemoCarousel: React.FC<CarouselProps> = ({ images }) => {
                 fontWeight: 700,
               }}
             >
-              Escultura
+              {image.alt}
             </p>
           </div>
         ))}
