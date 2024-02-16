@@ -5,6 +5,7 @@ import AOS from 'aos';
 // Import the GalleryPage component
 import GalleryPage from './GalleryPage';
 import ReactCarrousel from './ReactCarrousel';
+import MultiCarousel from './MultiCarrousel';
 import './layout.css';
 
 export default function Page() {
@@ -32,18 +33,28 @@ export default function Page() {
     // Add more image objects as needed
   ];
 
+  const carouselImages = [
+    [
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 1' },
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 2' },
+      // More images for the first carousel
+    ],
+    [
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
+      // More images for the second carousel
+    ],
+    [
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
+      // More images for the second carousel
+    ],
+    // More image arrays for additional carousels
+  ];
+
   return (
     <div style={{ padding: '0px 15px' }}>
-      <ReactCarrousel />
-      <div style={{ marginTop: '20px' }}>
-        <ReactCarrousel />
-      </div>
-      <div style={{ marginTop: '20px' }}>
-        <ReactCarrousel />
-      </div>
-      <div style={{ marginTop: '20px' }}>
-        <ReactCarrousel />
-      </div>
+      <MultiCarousel carousels={carouselImages} />
     </div>
   );
 }

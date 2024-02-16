@@ -4,7 +4,6 @@ import { inter } from '@/app/ui/fonts';
 import Link from 'next/link';
 import './layout.css';
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 import { LuLampDesk } from 'react-icons/lu';
 import { GiWoodFrame } from 'react-icons/gi';
 import { GiAlienFire } from 'react-icons/gi';
@@ -22,7 +21,6 @@ export default function RootLayout({
   const pathname = usePathname();
 
   console.log('pathname', pathname);
-  // console.log("link",link);
 
   const [opacity, setOpacity] = useState(1);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -66,7 +64,6 @@ export default function RootLayout({
                 className="navbar-border"
                 style={{ width: `${scrollProgress}%` }}
               ></div>{' '}
-              {/* Animated border */}
               <nav>
                 <ul>
                   <li>
