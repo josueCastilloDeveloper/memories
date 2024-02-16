@@ -232,11 +232,11 @@
 }
 
 .esculturas-page {
-  padding: 20px 10px; /* Default padding for small screens */
+  padding: 0px 10px; /* Default padding for small screens */
 }
 
 /* Increase padding for medium screens (e.g., tablets) */
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .esculturas-page {
     padding: 20px 50px; /* Adjust as needed */
   }
