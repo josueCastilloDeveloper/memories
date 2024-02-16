@@ -186,3 +186,21 @@
   border-radius: 15px; /* Ensure border-radius is applied */
   overflow: hidden; /* Hide overflow to maintain border-radius */
 }
+
+
+
+.image-icon {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  /* width: 500px; */
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50px; /* Ensure border-radius is applied */
+  overflow: hidden; /* Hide overflow to maintain border-radius */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for both properties */
+}

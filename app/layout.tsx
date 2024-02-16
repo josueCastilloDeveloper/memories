@@ -10,6 +10,7 @@ import { GiWoodFrame } from 'react-icons/gi';
 import { GiAlienFire } from 'react-icons/gi';
 import { FaStar } from 'react-icons/fa6';
 import ImageWithActions from './image-with-actions';
+import LogoIconComponent from './logo-icon-component';
 import { usePathname } from 'next/navigation';
 import path from 'path';
 
@@ -112,7 +113,7 @@ export default function RootLayout({
               </nav>
             </div>
           </div>
-
+          <LogoIconComponent />
           <main className="content">{children}</main>
         </div>
       </body>

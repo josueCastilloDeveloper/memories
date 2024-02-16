@@ -5,6 +5,7 @@ import AOS from 'aos';
 // Import the GalleryPage component
 import GalleryPage from './GalleryPage';
 import ReactCarrousel from './ReactCarrousel';
+import './layout.css';
 
 export default function Page() {
   useEffect(() => {
@@ -32,13 +33,17 @@ export default function Page() {
   ];
 
   return (
-    <div>
-      {/* Render the GalleryPage component with the images array as a prop */}
-      {/* <GalleryPage images={images} /> */}
+    <div style={{ padding: '0px 15px' }}>
       <ReactCarrousel />
-      <ReactCarrousel />
-      <ReactCarrousel />
-      <ReactCarrousel />
+      <div style={{ marginTop: '20px' }}>
+        <ReactCarrousel />
+      </div>
+      <div style={{ marginTop: '20px' }}>
+        <ReactCarrousel />
+      </div>
+      <div style={{ marginTop: '20px' }}>
+        <ReactCarrousel />
+      </div>
     </div>
   );
 }

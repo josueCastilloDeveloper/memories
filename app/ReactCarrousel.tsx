@@ -28,7 +28,7 @@ const DemoCarousel: React.FC<CarouselProps> = () => {
     enableScroll();
   };
   return (
-    <div style={{ padding: '10px 20px', borderRadius: '20px' }}>
+    <div style={{ borderRadius: '20px' }}>
       <Carousel
         className="carrousel"
         infiniteLoop={true}
