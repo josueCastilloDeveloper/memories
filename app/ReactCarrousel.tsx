@@ -34,10 +34,10 @@ const DemoCarousel: React.FC<CarouselProps> = ({ images }) => {
         className="carrousel"
         infiniteLoop={true}
         showThumbs={false}
-        showArrows={false}
+        showArrows={true}
         showStatus={false}
         swipeable={true}
-        emulateTouch={true}
+        emulateTouch={false}
         useKeyboardArrows={true}
         dynamicHeight={false}
         swipeScrollTolerance={20}
