@@ -187,8 +187,6 @@
   overflow: hidden; /* Hide overflow to maintain border-radius */
 }
 
-
-
 .image-icon {
   position: fixed;
   top: 15px;
@@ -203,4 +201,57 @@
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease; /* Smooth transition for both properties */
+}
+
+.image-icon:hover {
+  transform: scale(1.05); /* Slightly enlarge the image */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Create a shadow that simulates elevation */
+}
+
+/* Adjust the width for small screens */
+@media (min-width: 640px) {
+  .image-icon {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(400px, 1fr)
+  ); /* Creates a 2-column layout for larger screens */
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Adjusts to a 1-column layout for smaller screens */
+  }
+}
+
+.esculturas-page {
+  padding: 0 10px; /* Default padding for small screens */
+}
+
+/* Increase padding for medium screens (e.g., tablets) */
+@media (min-width: 768px) {
+  .esculturas-page {
+    padding: 0 50px; /* Adjust as needed */
+  }
+}
+
+/* Increase padding for large screens */
+@media (min-width: 1024px) {
+  .esculturas-page {
+    padding: 0 100px; /* Adjust as needed */
+  }
+}
+
+/* Maximum padding for extra large screens */
+@media (min-width: 1200px) {
+  .esculturas-page {
+    padding: 0 200px; /* Maximum padding */
+  }
 }

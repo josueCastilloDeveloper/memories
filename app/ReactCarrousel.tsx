@@ -47,13 +47,7 @@ const DemoCarousel: React.FC<CarouselProps> = ({ images }) => {
       >
         {images.map((image, index) => (
           <div key={index}>
-            <Image
-              src={image.src}
-              className="rounded-lg"
-              width={560}
-              height={620}
-              alt={image.alt}
-            />
+            <Image src={image.src} width={560} height={620} alt={image.alt} />
           </div>
         ))}
       </Carousel>

@@ -49,11 +49,26 @@ export default function Page() {
       { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
       // More images for the second carousel
     ],
+    [
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
+      // More images for the second carousel
+    ],
+    [
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
+      // More images for the second carousel
+    ],
+    [
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 3' },
+      { src: '/esculturas/lamparas/lampara1.png', alt: 'Description 4' },
+      // More images for the second carousel
+    ],
     // More image arrays for additional carousels
   ];
 
   return (
-    <div style={{ padding: '0px 15px' }}>
+    <div className="esculturas-page">
       <MultiCarousel carousels={carouselImages} />
     </div>
   );

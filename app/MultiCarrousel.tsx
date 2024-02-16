@@ -1,5 +1,6 @@
 import React from 'react';
-import DemoCarousel from './ReactCarrousel'; // Adjust the import path as needed
+import DemoCarousel from './ReactCarrousel'; // Ensure this path is correct
+import './layout.css';
 
 interface ImageObject {
   src: string;
@@ -12,9 +13,9 @@ interface MultiCarouselProps {
 
 const MultiCarousel: React.FC<MultiCarouselProps> = ({ carousels }) => {
   return (
-    <div>
+    <div className="grid-container">
       {carousels.map((images, index) => (
-        <div key={index} style={{ margin: '10px 0' }}>
+        <div key={index} className="grid-item">
           <DemoCarousel images={images} />
         </div>
       ))}
