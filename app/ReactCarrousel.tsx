@@ -36,11 +36,12 @@ const DemoCarousel: React.FC<CarouselProps> = ({ images }) => {
         showThumbs={false}
         showArrows={true}
         showStatus={false}
-        swipeable={false}
-        emulateTouch={false}
+        swipeable={true}
+        emulateTouch={true}
         useKeyboardArrows={true}
         dynamicHeight={false}
-        swipeScrollTolerance={20}
+        swipeScrollTolerance={50}
+        preventMovementUntilSwipeScrollTolerance={true}
         // Uncomment these if you have defined the event handlers
         // onSwipeStart={handleSwipeStart}
         // onSwipeEnd={handleSwipeEnd}

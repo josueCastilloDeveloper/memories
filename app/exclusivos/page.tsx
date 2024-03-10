@@ -6,6 +6,7 @@ import AOS from 'aos';
 import GalleryPage from '../GalleryPage';
 import ReactCarrousel from '../ReactCarrousel';
 import MultiCarousel from '../MultiCarrousel';
+import carouselImages from '../dataImages/exclusivosImages';
 import '../layout.css';
 
 export default function Page() {
@@ -31,15 +32,6 @@ export default function Page() {
       height: 620,
     },
     // Add more image objects as needed
-  ];
-
-  const carouselImages = [
-    [
-      { src: '/esculturas/exclusivos/e1/i1.JPG', alt: 'Description 1' },
-      { src: '/esculturas/exclusivos/e1/i2.JPG', alt: 'Description 1' },
-      // More images for the second carousel
-    ],
-    // More image arrays for additional carousels
   ];
 
   return (

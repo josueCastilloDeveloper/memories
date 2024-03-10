@@ -6,6 +6,8 @@ import AOS from 'aos';
 import GalleryPage from '../GalleryPage';
 import ReactCarrousel from '../ReactCarrousel';
 import MultiCarousel from '../MultiCarrousel';
+import carouselImages from '../dataImages/decoracionImages';
+
 import '../layout.css';
 
 export default function Page() {
@@ -16,30 +18,9 @@ export default function Page() {
     });
   }, []);
 
-  // Define the array of images to be passed to the GalleryPage component
-  const images = [
-    {
-      src: '/esculturas/lamparas/lampara1.png',
-      alt: 'Screenshot of the dashboard project showing mobile version',
-      width: 560,
-      height: 620,
-    },
-    {
-      src: '/esculturas/lamparas/lampara1.png',
-      alt: 'Screenshot of the dashboard project showing mobile version',
-      width: 560,
-      height: 620,
-    },
-    // Add more image objects as needed
-  ];
-
-  const carouselImages = [
-    // More image arrays for additional carousels
-  ];
-
   return (
     <div className="esculturas-page">
-      {/* <MultiCarousel carousels={carouselImages} /> */}
+      <MultiCarousel carousels={carouselImages} />
     </div>
   );
 }
