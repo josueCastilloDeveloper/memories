@@ -8,14 +8,13 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   transition: opacity 0.3s ease-in-out;
-  border-radius: 30px; /* Ensure border-radius is applied */
-  overflow: hidden; /* Hide overflow to maintain border-radius */
+  border-radius: 30px;
+  overflow: hidden;
 }
 
-/* Adjust the width for small screens */
 @media (min-width: 640px) {
   .navbar {
-    width: 500px; /* Width for small screens */
+    width: 500px;
     top: 50px;
   }
 }
@@ -24,18 +23,18 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 2px; /* Height of the animated border */
-  background-color: #70a86c; /* Color of the animated border */
-  transition: width 0.3s ease; /* Smooth transition for the width */
+  height: 2px;
+  background-color: #70a86c;
+  transition: width 0.3s ease;
 }
 
 .navbar:hover {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
 
 .navbar nav ul {
-  list-style: none; /* Remove default list styling */
+  list-style: none;
   margin: 0;
   padding: 10px 0; /* Padding top and bottom */
   display: flex; /* Align items in a row */

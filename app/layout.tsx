@@ -11,7 +11,6 @@ import { FaStar } from 'react-icons/fa6';
 import ImageWithActions from './image-with-actions';
 import LogoIconComponent from './logo-icon-component';
 import { usePathname } from 'next/navigation';
-import path from 'path';
 
 export default function RootLayout({
   children,
@@ -19,9 +18,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-
-  console.log('pathname', pathname);
-
   const [opacity, setOpacity] = useState(1);
   const [scrollProgress, setScrollProgress] = useState(0);
 
