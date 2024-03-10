@@ -1,12 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { LuInstagram } from 'react-icons/lu';
-import { FaFacebook } from 'react-icons/fa';
-import { SiTiktok } from 'react-icons/si';
-
 import { FaInstagram, FaFacebookF, FaTiktok } from 'react-icons/fa';
-
-
 import './layout.css';
 
 const FloatingActionButtons = () => {
@@ -25,10 +19,7 @@ const FloatingActionButtons = () => {
 
   return (
     <div>
-      <button
-        onClick={toggleOpen}
-        className=""
-      >
+      <button onClick={toggleOpen} className="">
         <Image
           src="/diseniun_logo.jpeg"
           className="diseniun-logo"
@@ -38,24 +29,47 @@ const FloatingActionButtons = () => {
         />
       </button>
 
-
       <button
         className="instagram-logo"
         style={{ display: isOpen ? 'block' : 'none' }}
       >
-      <FaInstagram size={35} style={{ position: "absolute" , top: "3", left: "2", color: '#f6048e' }} />
+        <FaInstagram
+          size={35}
+          style={{
+            position: 'absolute',
+            top: '3',
+            left: '2',
+            color: '#f6048e',
+          }}
+        />
       </button>
       <button
         className="facebook-logo"
         style={{ display: isOpen ? 'block' : 'none' }}
       >
-      <FaFacebookF style={{ position: "absolute" , top: "4", left: "3", color: '#1877f2' }} size={33}/>
+        <FaFacebookF
+          style={{
+            position: 'absolute',
+            top: '4',
+            left: '3',
+            color: '#1877f2',
+          }}
+          size={33}
+        />
       </button>
       <button
         className="tiktok-logo"
         style={{ display: isOpen ? 'block' : 'none' }}
       >
-      <FaTiktok style={{ position: "absolute" , top: "4", left: "4", color: '#000000' }} size={32} />
+        <FaTiktok
+          style={{
+            position: 'absolute',
+            top: '4',
+            left: '4',
+            color: '#000000',
+          }}
+          size={32}
+        />
       </button>
     </div>
   );

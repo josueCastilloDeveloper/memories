@@ -1,23 +1,10 @@
 'use client';
-// Import React and necessary hooks
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-// Import the GalleryPage component
-import GalleryPage from '../GalleryPage';
-import ReactCarrousel from '../ReactCarrousel';
+import React from 'react';
 import MultiCarousel from '../MultiCarrousel';
 import carouselImages from '../dataImages/decoracionImages';
-
 import '../layout.css';
 
 export default function Page() {
-  useEffect(() => {
-    AOS.init({
-      duration: 5000,
-      once: false,
-    });
-  }, []);
-
   return (
     <div className="esculturas-page">
       <MultiCarousel carousels={carouselImages} />

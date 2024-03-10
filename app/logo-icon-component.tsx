@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { LuInstagram } from 'react-icons/lu';
-import { FaFacebook } from 'react-icons/fa';
-import { SiTiktok } from 'react-icons/si';
-
-import { FaInstagram, FaFacebookF, FaTiktok } from 'react-icons/fa';
-
 import './layout.css';
 
 const LogoIconComponent = () => {
@@ -16,7 +10,6 @@ const LogoIconComponent = () => {
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
-    // Toggle the visibility of the action buttons
     setOpenInstagram(!openInstagram);
     setOpenFacebook(!openFacebook);
     setOpenTikTok(!openTikTok);
