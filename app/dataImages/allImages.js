@@ -2,6 +2,7 @@ const carouselImages = [
   [
     { src: '/memorias/inicio/inicio_3.png', alt: 'Asi empezó' },
     { src: '/memorias/inicio/inicio_2.png', alt: 'Asi empezó' },
+    { src: '/memorias/inicio/inicio_4.jpg', alt: 'Asi empezó' },
     { src: '/memorias/inicio/inicio_1.png', alt: 'Asi empezó' },
   ],
   [
