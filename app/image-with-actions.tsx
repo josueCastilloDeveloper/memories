@@ -19,17 +19,17 @@ const FloatingActionButtons = () => {
 
   return (
     <div>
-      <button onClick={toggleOpen} className="">
+      {/* <button onClick={toggleOpen} className=""> */}
         <Image
-          src="/diseniun_logo.jpeg"
+          src="/nadine_logo.jpg"
           className="diseniun-logo"
           width={50}
           height={50}
           alt="Diseniun Logo"
         />
-      </button>
+      {/* </button> */}
 
-      <button
+      {/* <button
         className="instagram-logo"
         style={{ display: isOpen ? 'block' : 'none' }}
       >
@@ -70,7 +70,7 @@ const FloatingActionButtons = () => {
           }}
           size={32}
         />
-      </button>
+      </button> */}
     </div>
   );
 };

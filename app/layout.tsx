@@ -56,54 +56,30 @@ export default function RootLayout({
               onMouseEnter={handleMouseEnter} // Restore opacity on hover
               onMouseLeave={handleMouseLeave} // Reapply condition when mouse leaves
             >
-              <div
-                className="navbar-border"
-                style={{ width: `${scrollProgress}%` }}
-              ></div>{' '}
-              <nav>
-                <ul>
-                  <li>
-                    <Link href="/">
-                      <FaStar
-                        size={30}
-                        className={`transition duration-300 ease-in-out hover:text-purple-500 ${
-                          pathname === '/' ? 'text-purple-500' : ''
-                        }`}
-                      />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/lamparas">
-                      <LuLampDesk
-                        size={30}
-                        className={`transition duration-300 ease-in-out hover:text-blue-500 ${
-                          pathname === '/lamparas' ? 'text-blue-500' : ''
-                        }`}
-                      />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/decoracion">
-                      <GiWoodFrame
-                        size={30}
-                        className={`transition duration-300 ease-in-out hover:text-green-700 ${
-                          pathname === '/decoracion' ? 'text-green-700' : ''
-                        }  `}
-                      />
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/exclusivos">
-                      <GiAlienFire
-                        size={30}
-                        className={`transition duration-300 ease-in-out hover:text-orange-500 ${
-                          pathname === '/exclusivos' ? 'text-orange-500' : ''
-                        }`}
-                      />
-                    </Link>
-                  </li>
-                </ul>
-              </nav>
+              <div style={{ textAlign: 'center' }}>
+  <h1
+    style={{
+      margin: 0,
+      padding: '12px 8px',
+      fontSize: 'clamp(28px, 6vw, 64px)',
+      fontWeight: 800,
+      letterSpacing: '0.06em',
+      textTransform: 'uppercase',
+      color: '#111827',
+      textShadow: '0 8px 24px rgba(0,0,0,0.2)',
+      backgroundImage:
+        'linear-gradient(90deg, rgba(99,102,241,.25), rgba(236,72,153,.25))',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '100% 10px',
+      backgroundPosition: '0 100%',
+      borderRadius: 6,
+      display: 'inline-block',
+    }}
+  >
+    Memorias
+  </h1>
+</div>
+
             </div>
           </div>
           <LogoIconComponent />

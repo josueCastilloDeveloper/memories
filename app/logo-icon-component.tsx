@@ -17,15 +17,15 @@ const LogoIconComponent = () => {
 
   return (
     <div>
-      <button onClick={toggleOpen} className="">
+      {/* <button onClick={toggleOpen} className=""> */}
         <Image
-          src="/foto-perfil-giovanny.png"
+          src="/josue_logo.jpg"
           className="image-icon"
           width={50}
           height={50}
           alt="Diseniun Logo"
         />
-      </button>
+      {/* </button> */}
     </div>
   );
 };
