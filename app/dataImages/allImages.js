@@ -14,8 +14,8 @@ const carouselImages = [
   ],
   [
     { src: '/memorias/zooDeCastellar/zooDeCastellar_1.jpeg', alt: 'Tour por españa hasta Castellar' },
-    { src: '/memorias/zooDeCastellar/zooDeCastellar_2.jpeg', alt: '' },
-    { src: '/memorias/zooDeCastellar/zooDeCastellar_3.jpeg', alt: '' },
+    { src: '/memorias/zooDeCastellar/zooDeCastellar_2.jpeg', alt: 'Tour por españa hasta Castellar' },
+    { src: '/memorias/zooDeCastellar/zooDeCastellar_3.jpeg', alt: 'Tour por españa hasta Castellar' },
   ],
   [
     { src: '/memorias/cabarceno/cabarceno_1.jpeg', alt: 'Visitando Cabarceno' },
