@@ -27,6 +27,10 @@ const carouselImages = [
   [
     { src: '/memorias/coraxFauna/coraxFauna_1.jpeg', alt: 'Carax Fauna, un lobo me dejo vivir, pero fui increible' },
     { src: '/memorias/coraxFauna/coraxFauna_2.jpeg', alt: 'Carax Fauna, un lobo me dejo vivir, pero fui increible' },
+  ],
+  [
+    { src: '/memorias/futuro/futuro_1.png', alt: 'Futuro...' },
+
   ]
 ];
 
