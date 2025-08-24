@@ -6,8 +6,8 @@ const carouselImages = [
     { src: '/memorias/inicio/inicio_1.png', alt: 'Asi empezó' },
   ],
   [
-    { src: '/memorias/dormirSuelo/dormirSuelo_1.png', alt: 'Durmiendo en el suelo' },
-    { src: '/memorias/dormirSuelo/dormirSuelo_2.png', alt: 'Durmiendo en el suelo' },
+    { src: '/memorias/dormirSuelo/dormirSuelo_2.png', alt: 'Viviendo juntos' },
+    { src: '/memorias/dormirSuelo/dormirSuelo_1.png', alt: 'Viviendo juntos' },
   ],
   [
     { src: '/memorias/barcelona/barcelona_1.png', alt: 'Cita romantica en Barcelona'  },
