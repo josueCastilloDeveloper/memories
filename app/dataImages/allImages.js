@@ -10,7 +10,7 @@ const carouselImages = [
     { src: '/memorias/dormirSuelo/dormirSuelo_2.png', alt: 'Durmiendo en el suelo' },
   ],
   [
-    { src: '/memorias/barcelona/barcelona_1.png', alt: '' },
+    { src: '/memorias/barcelona/barcelona_1.png', alt: ''  },
   ],
   [
     { src: '/memorias/zooDeCastellar/zooDeCastellar_1.jpeg', alt: '' },
